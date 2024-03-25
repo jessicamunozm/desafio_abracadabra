@@ -127,39 +127,14 @@
               </nav>
 <!-- FIN NAVBAR -->
 
-<!-- Galeria -->
-<section id="gallery">
-    <h1> <img class="iconRabbit" src="./assets/img/icon rabbit h1.png" alt="icon rabbit">Abracadabra<img class="iconRabbit" src="./assets/img/icon rabbit h1.png" alt="icon rabbit"></h1>
-    <div class="galeria">
-      <div class="sombrero">
-        <a target="_blank" href="/abracadabra/conejo/1">
-          <img src="./assets/img/sombrero.png" alt="Cinque Terre" />
-        </a>
-        <h1>1</h1>
-      </div>
-
-      <div class="sombrero">
-        <a target="_blank" href="/abracadabra/conejo/2">
-          <img src="./assets/img/sombrero.png" alt="Forest" />
-        </a>
-        <h1>2</h1>
-      </div>
-
-      <div class="sombrero">
-        <a target="_blank" href="/abracadabra/conejo/3">
-          <img src="./assets/img/sombrero.png" alt="Northern Lights" />
-        </a>
-        <h1>3</h1>
-      </div>
-
-      <div class="sombrero">
-        <a target="_blank" href="/abracadabra/conejo/4">
-          <img src="./assets/img/sombrero.png" alt="Mountains" />
-        </a>
-        <h1>4</h1>
-      </div>
-    </div>
-  </section>
+<div>
+  <h1 class="h1index">¿Quieres hacer magia?</h1>
+  <label for="inputIndex">¡Empecemos! ingresa tu nombre de usuario</label>
+  <div id="input">
+      <input id="inputIndex" type="text">
+      <button id="btnPlay" class="btn" onclick="redirect()">Juguemos!</button> 
+  </div>
+</div>
 
   <!-- FOOTER -->
   <footer>
@@ -176,8 +151,16 @@
   <h6>Desafío Latam</h6>
   </div>
   </footer>
-  
-  <script src="./assets/javascript/index.js"></script>
+
+<script>
+function redirect() {
+const name = document.getElementById("inputIndex").value;
+window.location.href = "http://localhost:3000/abracadabra/juego/" + name;
+}
+</script>
+
+  <script src="../index.js"></script>
+  <script src="../dom.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
   </body>

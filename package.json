@@ -1,0 +1,25 @@
+{
+  "description": "Primer desafío evaluado módulo 6",
+  "name": "abracadabra",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "express",
+    "nodemon",
+    "html",
+    "css",
+    "javascript",
+    "node",
+    "dependencies",
+    "common",
+    "js"
+  ],
+  "author": "Jessica Muñoz",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
